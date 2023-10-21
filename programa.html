@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa</title>
+</head>
+<body>
+    <script>
+
+        function pulaLinha(){
+
+            document.write("<br>");
+        }
+
+        function mostra(frase){
+
+            document.write(frase);
+            pulaLinha();
+        }
+        var ano = 2023
+
+        mostra("Renan tem " + (ano - 1988) + " anos de idade.");
+        mostra("Minha mãe tem " + (ano - 1955) + " anos de idade.");
+        mostra("E eu tenho " + (ano - 1988) + " anos de idade. A mesma idade do Renan.");
+
+        var renan = 35;
+        var eu = 35;
+        var mae = 68;
+
+        var media = (renan + eu + mae)/3;
+
+        document.write(" A média da idade dos 3 é " + media);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol</title>
+</head>
+<body>
+    <script>
+         function pulaLinha(){
+
+            document.write("<br><br>");
+        }
+
+        function mostra(frase){
+
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var vitorias = parseInt(prompt("Digite o número de vitórias"));
+        var empates = parseInt(prompt("Digite o número de empates."));
+
+        var pontos = (vitorias*3 + empates);
+
+        if(pontos > 28){
+
+            mostra(" Seu time fez mais que ano passado.");
+        }if(pontos<28) {
+
+            mostra("Seu time fez menos pontos que ano passado.");
+        }else{
+
+            mostra("Seu time fez a mesma quantidade de pontos do ano passado.");
+        }
+
+        mostra(pontos);
+        mostra("Fim");
+    </script>
+    
+</body>
+</html>

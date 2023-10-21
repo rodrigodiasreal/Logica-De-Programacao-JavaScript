@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+
+           document.write("<br><br>");
+       }
+
+       function mostra(frase){
+
+           document.write(frase);
+           pulaLinha();
+       }
+
+      //for possui 3 "funções" (variável, condição, incremento);
+
+      for(var multiplicador = 1; multiplicador <= 10; multiplicador = multiplicador++) {
+
+        mostra(7 * multiplicador);
+       
+    }
+
+    //"While" se faz separado, primeiro vem a variável, depois a condição no "While" e dentro do bloco o que se quer mostrar o incremento.
+
+    // var multiplicador = 1;
+
+    // while(multiplicador <=10) {
+
+    //     mostra(7 * multiplicador);
+    //     multiplicador = multiplicador +1
+    // }
+
+    //    mostra("Fim");
+       </script>
+</body>
+</html>
